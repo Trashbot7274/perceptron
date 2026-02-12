@@ -88,6 +88,6 @@ def perceptron(x, y, lr, iterations, order: int = 1, shuffle: bool = True):
     return weights, bias
 
 if __name__ == "__main__":
-    test = gen_flipped_lin_separable()
-    x, y = test(5)
-    weights, bias = perceptron(x, y, lr=0.0001, iterations=1000, order=5)
+    test = gen_lin_separable()
+    x, y = big_higher_dim_separable()
+    weights, bias = perceptron(x, y, lr=0.0001, iterations=1000, order=15)
