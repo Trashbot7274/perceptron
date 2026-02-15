@@ -88,6 +88,5 @@ def perceptron(x, y, lr, iterations, order: int = 1, shuffle: bool = True):
     return weights, bias
 
 if __name__ == "__main__":
-    test = gen_lin_separable()
-    x, y = big_higher_dim_separable()
-    weights, bias = perceptron(x, y, lr=0.0001, iterations=1000, order=15)
+    x, y = big_higher_dim_separable() # You can use any data-generating function from data.py
+    weights, bias = perceptron(x, y, lr=0.0001, iterations=1000, order=15) # Define learning ate, iterations and order

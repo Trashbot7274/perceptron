@@ -1,18 +1,4 @@
-'''
-Code for MIT 6.036 Homework 2
-'''
-# Implement perceptron, average perceptron
-
-import pdb
-import operator
-import itertools
-
 import numpy as np
-import matplotlib.pyplot as plt
-
-from matplotlib import colors
-
-
 data1, labels1, data2, labels2 = \
     (np.array([[-2.97797707, 2.84547604, 3.60537239, -1.72914799, -2.51139524,
                 3.10363716, 2.13434789, 1.61328413, 2.10491257, -3.87099125,
